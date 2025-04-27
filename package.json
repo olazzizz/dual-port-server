@@ -1,0 +1,24 @@
+{
+  "name": "dual-port-server",
+  "version": "1.0.0",
+  "description": "A Node.js server that listens on both HTTP (8080) and HTTPS (443) ports",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "generate-certs": "bash generate-certs.sh",
+    "setup": "npm install && npm run generate-certs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "http",
+    "https",
+    "dual-port"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
